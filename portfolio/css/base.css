@@ -1,0 +1,285 @@
+
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500|Lora:400,400i,700,700i|Roboto:300,400,500,600,700");
+@import url("font-awesome/css/fontawesome-all.css");
+
+
+
+/* 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari. */
+::-webkit-file-upload-button {
+	-webkit-appearance: button;  /* 1 */
+	font: inherit;  /* 2 */
+}
+
+/* ------------------------------------------------------------------- 
+ * ## interactive
+ * ------------------------------------------------------------------- */
+
+/* Add the correct display in Edge, IE 10+, and Firefox. */
+details {
+	display: block;
+}
+
+/* Add the correct display in all browsers. */
+summary {
+	display: list-item;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## misc
+ * ------------------------------------------------------------------- */
+
+/* Add the correct display in IE 10+. */
+template {
+	display: none;
+}
+
+/* Add the correct display in IE 10. */
+[hidden] {
+	display: none;
+}
+
+
+
+/* ===================================================================
+ * # basic/base setup styles
+ *
+ * ------------------------------------------------------------------- */
+html {
+	font-size: 62.5%;
+	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+}
+
+body {
+	font-weight: normal;
+	line-height: 1;
+	word-wrap: break-word;
+	-moz-font-smoothing: grayscale;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	-webkit-overflow-scrolling: touch;
+	-webkit-text-size-adjust: none;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## Media
+ * ------------------------------------------------------------------- */
+svg,
+img,
+video
+embed,
+iframe,
+object {
+	max-width: 100%;
+	height: auto;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## Typography resets 
+ * ------------------------------------------------------------------- */
+div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, p, blockquote, th, td {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	font-size: inherit;
+	text-rendering: optimizeLegibility;
+}
+
+em,
+i {
+	font-style: italic;
+	line-height: inherit;
+}
+
+strong,
+b {
+	font-weight: bold;
+	line-height: inherit;
+}
+
+small {
+	font-size: 60%;
+	line-height: inherit;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+li {
+	display: block;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## links
+ * ------------------------------------------------------------------- */
+a {
+	text-decoration: none;
+	line-height: inherit;
+}
+
+a img {
+	border: none;
+}
+
+/* ------------------------------------------------------------------- 
+ * ## inputs
+ * ------------------------------------------------------------------- */
+fieldset {
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+.row {
+	width: 89%;
+	max-width: 1200px;
+	margin: 0 auto;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	-ms-flex-flow: row wrap;
+	flex-flow: row wrap;
+}
+
+.row .row {
+	width: auto;
+	max-width: none;
+	margin-left: -20px;
+	margin-right: -20px;
+}
+
+/* columns
+ * -------------------------------------- */
+.column {
+	-webkit-flex: 1 1 0%;
+	-ms-flex: 1 1 0%;
+	flex: 1 1 0%;
+	padding: 0 20px;
+}
+
+.collapse > .column,
+.column.collapse {
+	padding: 0;
+}
+
+/* flex row containers utility classes
+ * ----------------------------------------- */
+.row.row-wrap {
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+}
+
+.row.row-nowrap {
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: none;
+	flex-wrap: nowrap;
+}
+
+.row.row-top {
+	-webkit-align-items: flex-start;
+	-ms-flex-align: start;
+	align-items: flex-start;
+}
+
+.row.row-bottom {
+	-webkit-align-items: flex-end;
+	-ms-flex-align: end;
+	align-items: flex-end;
+}
+
+.row.row-center {
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+.row.row-stretch {
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+}
+
+.row.row-baseline {
+	-webkit-align-items: baseline;
+	-ms-flex-align: baseline;
+	align-items: baseline;
+}
+
+/* flex item utility alignment classes
+ * ----------------------------------------- */
+.align-center {
+	margin: auto;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-left {
+	margin-right: auto;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-right {
+	margin-left: auto;
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-x-center {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.align-x-left {
+	margin-right: auto;
+}
+
+.align-x-right {
+	margin-left: auto;
+}
+
+.align-y-center {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+}
+
+.align-y-top {
+	-webkit-align-self: flex-start;
+	-ms-flex-item-align: start;
+	align-self: flex-start;
+}
+
+.align-y-bottom {
+	-webkit-align-self: flex-end;
+	-ms-flex-item-align: end;
+	align-self: flex-end;
+}
+
+.section-intro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.s-contact {
+    background-color: transparent; /* Set the background to transparent or your preferred color */
+}
